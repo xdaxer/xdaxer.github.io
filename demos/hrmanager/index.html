@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Manager Dashboard</title>
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <aside>
+        <p class="logo">HR Manager Dashboard</p>
+    
+      
+
+        
+
+
+        
+       <div class="aside-uttons">
+        <div class="buttons">
+
+            <a href="#">
+                <i class="fa-solid fa-grid-2"></i>
+                <p>Dashboard</p>
+            </a>
+          
+
+            <a href="#">
+                <i class="fa-solid fa-messages"></i>
+                <p>Messages</p>
+            </a>
+          
+
+            <a href="#">
+                <i class="fa-solid fa-calendar"></i>
+                <p>Calendar</p>
+            </a>
+          
+
+
+        </div>
+    
+
+
+        <div class="buttons">
+        
+            <label>RECRUITMENT</label>
+            <a href="#">
+                <i class="fa-solid fa-briefcase"></i>
+                <p>Jobs</p>
+            </a>
+          
+
+            <a href="#">
+                <i class="fa-regular fa-tv-retro"></i>
+                <p>Career</p>
+            </a>
+          
+
+</label>
+       </div>
+
+        
+
+
+
+
+
+
+       <div class="buttons">
+        
+        <label>ORGANIZATION</label>
+        <a href="#">
+            <i class="fa-solid fa-person"></i>
+            <p>Employees</p>
+        </a>
+      
+
+        <a href="#">
+            <i class="fa-solid fa-file-lines"></i>
+            <p>Employees</p>
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-file-chart-column"></i>
+            <p>Reports</p>
+        </a>
+      
+
+</label>
+
+
+
+
+   </div>
+
+
+
+  
+
+    </aside>
+    
+<main>
+
+
+    
+    <nav>
+        <div class="nav-container">
+        
+        
+            <div class="search">
+        
+              
+                <label class="fa-solid fa-magnifying-glass" for="search"></label>
+                
+                <input type="search" id="search" placeholder="Search for jobs, candidates and more...">
+        
+        
+            </div>
+        
+        <div class="nav-buttons">
+            
+            <a class="fa-regular fa-gear" href="#"></a>
+        
+            <a class="fa-regular fa-bell" href="#"></a>
+        </div>
+            </nav>
+            
+
+            
+
+
+
+
+
+<div class="container">
+
+
+
+<div class="top-elements">
+
+<h2>Current Openings</h2>
+
+<div class="filter">
+    <select name="filter" id="filter">  
+        <option value="0" >Sort By: Latest</option> 
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        </select>
+
+        <i class="fa-solid fa-caret-down"></i>
+</div>
+</div>
+
+
+<div class="catogory">
+
+<div class="element" id="ux">
+   
+
+<div class="element-top">
+    <div class="element-logo">
+        <img src="images/UX-Designer.png">
+        <div class="element-texts">
+            <p>UX Designer</p>
+        <i>Posted 2 days ago</i>
+        
+        </div> 
+     </div>
+
+
+     <button onclick="go()" ><i class="fa-regular fa-arrow-up-right fa-fade"></i></button>
+
+</div>
+
+
+ <div class="tags">
+<div class="tag">
+    <i class="fa-solid fa-location-dot"></i>
+    <p>Festac</p>
+</div>
+
+<div class="tag">
+    <i class="fa-solid fa-books"></i>
+    <p>3 years exp.</p>
+</div>
+
+ </div>
+
+
+ <div class="element-bottom">
+    <div class="works">
+        <h2>145</h2>
+        <label>applications</label>
+        
+        
+        </div>
+    
+      <p>25 in last week</p>
+ </div>
+</div>
+
+
+
+
+    <div class="element"  id="growth">
+   
+
+        <div class="element-top">
+            <div class="element-logo">
+                <img src="images/Growth-Manager.png">
+                <div class="element-texts">
+                    <p>Growth Manager</p>
+                <i>Posted 1 days ago</i>
+                
+                </div> 
+             </div>
+        
+        
+             <button onclick="go()" ><i class="fa-regular fa-arrow-up-right fa-fade"></i></button>
+        
+        </div>
+        
+        
+         <div class="tags">
+        <div class="tag">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Remote</p>
+        </div>
+        
+        <div class="tag">
+            <i class="fa-solid fa-books"></i>
+            <p>16 years exp.</p>
+        </div>
+        
+         </div>
+        
+        
+         <div class="element-bottom">
+            <div class="works">
+                <h2>38</h2>
+                <label>applications</label>
+                
+                
+                </div>
+            
+              <p>10 in last week</p>
+         </div>
+        </div>
+        
+
+
+<div class="element" id="finance">
+   
+
+    <div class="element-top">
+        <div class="element-logo">
+            <img src="images\Financial-Analyst.png">
+            <div class="element-texts">
+                <p>Financial Analyst</p>
+            <i>Posted 10 days ago</i>
+            
+            </div> 
+         </div>
+    
+    
+         <button><i class="fa-regular fa-arrow-up-right fa-fade"></i></button>
+    
+    </div>
+    
+    
+     <div class="tags">
+    <div class="tag">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Lekki</p>
+    </div>
+    
+    <div class="tag">
+        <i class="fa-solid fa-books"></i>
+        <p>5 years exp.</p>
+    </div>
+    
+     </div>
+    
+    
+     <div class="element-bottom">
+        <div class="works">
+            <h2>1</h2>
+            <label>applications</label>
+            
+            
+            </div>
+        
+          <p>912 in last week</p>
+     </div>
+    </div>
+
+
+</div>
+
+
+<div class="top-elements">
+
+    <h2>Current Openings</h2>
+    
+    <div class="filter">
+        <select name="filter" id="filter">  
+            <option value="0" >Sort By: Latest</option> 
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            </select>
+    
+            <i class="fa-solid fa-caret-down"></i>
+    </div>
+    </div>
+
+
+<!--table-->
+
+
+
+<div class="table">
+
+    <div class="table-top">
+        <p id="selected">All</p>
+        <p>Accepted</p>
+        <p>Rejected</p>
+    </div>
+
+    <table>
+        <tr class="titles">
+           <td>CANDIDATE NAME</td>
+           <td>RATING &nbsp &nbsp<i class="fa-regular fa-arrow-up-wide-short"></i></td>
+           <td>STAGES &nbsp &nbsp <i class="fa-regular fa-arrow-up-wide-short"></i></td>
+           <td>APPLIED ROLE</td>
+           <td>APPLICATION DATE &nbsp &nbsp<i class="fa-regular fa-arrow-up-wide-short"></i></td>
+           <td>ATTACHMENTS</td>
+        </tr>
+    
+        <tr>
+            <td>
+                <div class="profile">
+    
+                    <img src="images/Profile/1.png">
+                    <p>Charlie Kristen</p>
+    
+                </div>
+    
+            </td>
+            <td>
+                <i class="fa-solid fa-star" style="color: #ffd92b;"></i> 3.5
+            </td>
+            <td>Design Challenge</td>
+            <td>Sr. UX Designer</td>
+            <td>12/02/23</td>
+            <td><i class="fa-solid fa-paperclip"></i> 13 files</td>
+        
+        </tr>
+    
+        <tr>
+            <td>
+                <div class="profile">
+    
+                    <img src="images/Profile/2.png">
+                    <p>Malaika Brown</p>
+    
+                </div>
+    
+            </td>
+            <td>
+                <i class="fa-solid fa-star" style="color: #ffd92b;"></i> 1.8
+            </td>
+            <td>Design Challenge</td>
+            <td>Financial Analyst</td>
+            <td>12/02/23</td>
+            <td><i class="fa-solid fa-paperclip"></i> 5 files</td>
+        
+        </tr>
+        <tr>
+            <td>
+                <div class="profile">
+    
+                    <img src="images/Profile/3.png">
+                    <p>Simon Minter</p>
+    
+                </div>
+    
+            </td>
+            <td>
+                <i class="fa-solid fa-star" style="color: #ffd92b;"></i> 5.0
+            </td>
+            <td>Design Challenge</td>
+            <td>Sr. Growth Manager</td>
+            <td>12/02/23</td>
+            <td><i class="fa-solid fa-paperclip"></i> 0 files</td>
+        
+        </tr>
+        <tr>
+            <td>
+                <div class="profile">
+    
+                    <img src="images/Profile/4.png">
+                    <p>Ashley Brooke</p>
+    
+                </div>
+    
+            </td>
+            <td>
+                <i class="fa-solid fa-star" style="color: #ffd92b;"></i> 2.0
+            </td>
+            <td>Design Challenge</td>
+            <td>Sr. UX Designer</td>
+            <td>12/02/23</td>
+            <td><i class="fa-solid fa-paperclip"></i> 3 files</td>
+        
+        </tr>
+        <tr>
+            <td>
+                <div class="profile">
+    
+                    <img src="images/Profile/5.png">
+                    <p>Nishant Talwar</p>
+    
+                </div>
+    
+            </td>
+            <td>
+                <i class="fa-solid fa-star" style="color: #ffd92b;"></i> 4
+            </td>
+            <td>Design Challenge</td>
+            <td>Financial Analyst</td>
+            <td>12/02/23</td>
+            <td><i class="fa-solid fa-paperclip"></i> 1 files</td>
+        
+        </tr>
+    
+    </table>
+    
+    
+</div>
+
+
+
+    
+    
+
+
+
+
+
+
+
+    
+
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
