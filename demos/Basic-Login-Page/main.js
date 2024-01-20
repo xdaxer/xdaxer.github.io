@@ -21,9 +21,9 @@ function login() {
     password.value === SERVER_PASSWORD &&
     userName.value === SERVER_USERNAME
   ) {
-    output.innerHTML = "Başarılı";
+    output.innerHTML = "Successful";
     window.location.href = "/profile";
   } else {
-    output.innerHTML = "Başarısız";
+    output.innerHTML = "unsuccessful";
   }
 } 
