@@ -1,6 +1,5 @@
 let container = document.querySelector("#container");
 let btn = document.querySelector("#btn");
-let wrongAnswer = 0;
 
 btn.addEventListener("click", function () {
   btn.style.display = "none";
@@ -20,7 +19,6 @@ firstQuestionA.addEventListener("click", function () {
   firstQuestionD.style.color = "white";
   btn.style.display = "none";
 
-  wrongAnswer += 1;
   console.log(`${wrongAnswer}`);
 });
 
@@ -31,7 +29,6 @@ firstQuestionB.addEventListener("click", function () {
   firstQuestionD.style.color = "white";
   btn.style.display = "none";
 
-  wrongAnswer += 1;
   console.log(`${wrongAnswer}`);
 });
 
@@ -42,7 +39,6 @@ firstQuestionC.addEventListener("click", function () {
   firstQuestionD.style.color = "white";
   btn.style.display = "none";
 
-  wrongAnswer += 1;
   console.log(`${wrongAnswer}`);
 });
 
