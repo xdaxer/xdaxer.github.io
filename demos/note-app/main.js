@@ -5,7 +5,7 @@ let noteList = document.querySelector("ul");
 let notes = [];
 
 addBtn.addEventListener("click", function () {
-  if (input.value > 0) {
+  if (input.value.length > 0) {
     notes.push(input.value);
     console.log(notes);
 
