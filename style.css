@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  background: #131111;
+
+  font-family: Inter;
+  font-weight: 400;
+}
+
+.container {
+  margin: auto;
+  padding: 0 244px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.texts {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.texts h1 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 48px;
+}
+
+.texts p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 12px;
+}
+
+.socialMediaButtons {
+  display: flex;
+  gap: 24px;
+}
+
+.socialMediaButtons i {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.fa-discord:hover {
+  color: #8292ea;
+}
+.fa-github:hover {
+  color: #75278b;
+}
+.fa-x-twitter:hover {
+  color: #1c96e8;
+}
+
+.fa-envelope:hover {
+  color: #f04235;
+}
