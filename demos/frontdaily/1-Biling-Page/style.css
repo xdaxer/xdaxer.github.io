@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  font-size: 4px;
+
+  /*  Color  Settings */
+  --Text-Color: #1a194d;
+  --Button-Color: #cbcbd9;
+  --Main-Color: #ee6338;
+  --Element-Selected: #fff;
+  --Aside-Background: #f8f8ff;
+  --Shadow: #726666;
+
+  /* Font Settings */
+
+  --Font: 'Poppins', sans-serif;
+
+  /*?  Reguler Font Settings */
+
+  --Font-Reguler-Weight: 400;
+
+  /*? Bold Font Settings */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+html {
+  font-family: var(--Font);
+  font-weight: var(--Font-Reguler-Weight);
+}
+
+body {
+  font-size: 4rem;
+  background: linear-gradient(#f8f8ff, #ffffff);
+  display: flex;
+}
+
+/* SideBar */
+
+.sidebar {
+  background-color: var(--Aside-Background);
+  height: 100%;
+  max-width: 65rem;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  padding: 6rem 0;
+}
+
+.sidebar-container {
+  width: 100%;
+  height: 100%;
+}
+
+/*? Profile */
+.profile {
+  display: flex;
+  margin: auto;
+  margin-bottom: 12rem;
+  width: 45rem;
+  gap: 3.1rem;
+}
+
+.profile .name {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile img {
+  border-radius: 4rem;
+  width: 14rem;
+  height: 14rem;
+}
+
+/*? Aside Buttons  */
+
+.sidebar-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  align-items: center;
+}
+
+.sidebar-buttons li {
+  list-style: none;
+  display: flex;
+  padding: 4rem;
+
+  padding-left: 2rem;
+  width: 55rem;
+  align-items: center;
+  cursor: pointer;
+  gap: 2rem;
+  color: var(--Text-Color);
+  border-radius: 1rem;
+}
+.sidebar-buttons li:hover {
+  background-color: var(--Element-Selected);
+}
+
+.selected {
+  border-left: var(--Main-Color) 1rem solid;
+}
+
+/*? Logout  */
+
+.logout {
+  display: flex;
+  margin: 4rem;
+  margin-bottom: 6rem;
+  color: var(--Text-Color);
+  cursor: pointer;
+  align-items: center;
+  padding: 4rem;
+  border-radius: 1rem;
+  gap: 2rem;
+}
+
+.logout:hover {
+  background-color: var(--Element-Selected);
+}
+
+/* Main */
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 6rem 0;
+  justify-content: space-around;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/*? Title  */
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.titles p {
+  font-size: 4rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.titles i {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 3rem;
+}
+
+/*? Table  */
+
+table {
+  font-family: arial, sans-serif;
+  max-width: 155rem;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+td,
+th {
+  text-align: left;
+  text-wrap: nowrap;
+  padding: 4rem;
+  padding-left: 0;
+  color: var(--Text-Color);
+  font-size: 4rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+tr:first-child td,
+tr:first-child th {
+  color: #62618f; /* veya istediğiniz renk */
+}
+
+button {
+  border: var(--Button-Color) 1px solid;
+  padding: 2rem 4rem;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: 500ms background-color, color;
+  font-size: 4rem;
+  color: var(--Text-Color);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+button:hover {
+  background-color: var(--Main-Color);
+  color: var(--Element-Selected);
+}
+
+/*? Load more */
+
+.more {
+  color: var(--Main-Color);
+  width: 100px;
+  font-size: 4rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*? Card */
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 150rem;
+}
+
+.card-content {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.card button {
+  margin-left: 3rem;
+}
+
+.card img {
+  border: var(--Button-Color) 1px solid;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.Payment-Method {
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.Payment-Method .titles p {
+  font-size: 4rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.Payment-Method .titles i {
+  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*? Plan */
+
+.plan {
+  background-color: var(--Main-Color);
+  border-radius: 4rem;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  text-align: left;
+  padding: 5rem 20rem;
+  filter: drop-shadow(1rem 2rem 1rem var(--Shadow));
+}
+
+.plan p {
+  color: white;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 4rem;
+}
+
+.plan b {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  color: white;
+}
+
+.plan button {
+  height: 10rem;
+  font-size: 4rem;
+  text-wrap: nowrap;
+  color: white;
+  transition: 0.5s background-color, color;
+}
+
+.plan button:hover {
+  background-color: white;
+  color: var(--Main-Color);
+  border: 1px solid --Button-Color;
+}

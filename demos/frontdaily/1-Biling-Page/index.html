@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!--Sidebar-->
+
+    <aside class="sidebar">
+      <div class="sidebar-container">
+        <!--?   Profile    -->
+        <div class="profile">
+          <img src="images/Profile-Photo.png" alt="Profile Photo" />
+          <div class="name">
+            <p>Violet Barker</p>
+            <i>@violetbarker1</i>
+          </div>
+        </div>
+        <!--?   Buttons    -->
+        <ul class="sidebar-buttons">
+          <li>
+            <img src="images/General.svg" alt="General Button" />
+            <p>General</p>
+          </li>
+
+          <li>
+            <img src="images/Password.svg" alt="Password Button" />
+            <p>Password</p>
+          </li>
+
+          <li>
+            <img src="images/Invitations.svg" alt="Invitations Button" />
+            <p>Invitations</p>
+          </li>
+
+          <li class="selected">
+            <img src="images/Billing.svg" alt="Billing Button" />
+            <p>Billing</p>
+          </li>
+
+          <li>
+            <img src="images/Apps.svg" alt="Apps Button" />
+            <p>Apps</p>
+          </li>
+        </ul>
+      </div>
+      <!--?   Logout    -->
+      <div class="logout">
+        <img src="images/logout.svg" alt="logout" />
+        <p>Log out</p>
+      </div>
+    </aside>
+
+    <!--Main-->
+
+    <main>
+      <div class="container">
+        <h1>Billing</h1>
+        <div class="titles">
+          <p>Order History</p>
+          <i>Manage billing information and view receips</i>
+        </div>
+
+        <table>
+          <tr>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Receipt</th>
+          </tr>
+          <tr>
+            <td>Oct. 21, 2023</td>
+            <td>Pro Portfolio</td>
+            <td><button>Download</button></td>
+          </tr>
+
+          <tr>
+            <td>July. 21, 2023</td>
+            <td>Sponsored Post</td>
+            <td><button>Download</button></td>
+          </tr>
+
+          <tr>
+            <td>Jun. 21, 2023</td>
+            <td>Sponsored Post</td>
+            <td><button>Download</button></td>
+          </tr>
+        </table>
+
+        <a href="#" class="more">Load more</a>
+
+        <div class="Payment-Method">
+          <div class="titles">
+            <p>Payment Method</p>
+            <i>Manage billing information and view receips</i>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <img src="images/visa.svg" alt="Payment Method" />
+              <p>Visa ending in 2255</p>
+            </div>
+            <button>Remove</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="plan">
+        <p>Your plan</p>
+        <b>Pro Annual</b>
+        <p>Renews on Nov. 2021</p>
+        <button id="cancelPlan">Cancel subscription</button>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
