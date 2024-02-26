@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+  font-size: 4px;
+
+  /*  Color  Settings */
+  --Text-Color: #000000;
+  --Button-Color: #254acc;
+  --Background-Color: #ffffff;
+
+  /* Font Settings */
+
+  --Font: 'Montserrat', sans-serif;
+
+  /*?  Reguler Font Settings */
+
+  --Font-Reguler-Weight: 500;
+
+  /*? Medium Font Settings */
+  --Font-Medium-Weight: 600;
+
+  /*? SemiBold Font Settings */
+  --Font-Semibold-Weight: 700;
+
+  /*? Bold Font Settings */
+  --Font-Bold-Weight: 800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+html {
+  font-family: var(--Font);
+}
+
+body {
+  background-color: #ececf6;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.widget {
+  width: 115rem;
+  height: 132rem;
+  background-color: var(--Background-Color);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  contain: content;
+  padding: 13rem 20rem;
+  justify-content: space-between;
+  border-radius: 5rem;
+}
+
+.close-widget {
+  position: absolute;
+  right: 10px;
+  border: 1px solid #eff2fd;
+  border-radius: 50%;
+  top: 10px;
+  cursor: pointer;
+}
+
+.widget p {
+  text-align: center;
+  color: var(--Text-Color);
+  font-size: 4rem;
+  font-weight: var(--Font-Reguler-Weight);
+}
+
+.widget .buttons {
+  display: flex;
+  gap: 4rem;
+}
+
+.widget .buttons button {
+  background-color: transparent;
+  border: 1px solid var(--Button-Color);
+  padding: 4rem 8rem;
+  text-wrap: nowrap;
+  color: var(--Button-Color);
+  border-radius: 8rem;
+  cursor: pointer;
+  font-weight: var(--Font-Bold-Weight);
+
+  transition: 0.3s background-color;
+}
+
+.widget .buttons button:hover {
+  background-color: var(--Button-Color);
+  color: var(--Background-Color);
+}
+
+.widget a {
+  font-size: 4rem;
+  font-weight: var(--Font-Reguler-Weight);
+  color: var(--Text-Color);
+}
